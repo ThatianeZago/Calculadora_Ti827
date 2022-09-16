@@ -17,6 +17,7 @@ public class Calc {
             System.out.println(" * -> Multiplicação");
             System.out.println(" / -> Divisão");
             System.out.println(" e -> Expoente");
+            System.out.println(" i -> IMC");
             System.out.println(" s -> Sair");
             System.out.println("Selecione um operador:");
             op = ler.next().charAt(0);
@@ -29,6 +30,8 @@ public class Calc {
                 case '/': Div.dividir(); break;
                 case 'e': Exp.potencia(); break;
                 case 'E':
+                case 'i': IMC.calculo(); break;
+                case 'I':  
                 default: System.out.println("Operador Incorreto");
             }
         }while(op!='s' && op!='S');
